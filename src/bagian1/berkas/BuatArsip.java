@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package bagian1.berkas;
 
-/**
- *
- * @author Acer
- */
+import java.io.File;
+
 public class BuatArsip {
-    
+    public static void main(String[] args) {
+        File folder = new File("arsip");
+
+        if (folder.mkdir()) {
+            System.out.println("Folder arsip berhasil dibuat.");
+        } else {
+            System.out.println("Folder arsip gagal dibuat atau sudah ada.");
+        }
+    }
 }
